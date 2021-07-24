@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #eee;
+  margin: 20px 0;
+}
+article {
+  width: 21cm;
+  min-height: 29.7cm;
+  background: white;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 1em;
+}
+p {
+  margin: .5em 0;
+}
+h1 {
+  font-size: 38px;
+  margin-top: 10px;
+}
+ol, ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  color: #666;
+}
+strong {
+  font-weight: normal;
+  color: #f60;
+}
+h3, h4, h5 {
+  margin: 0;
+}
+h4, h5 {
+  font-weight: normal;
+}
+a {
+  color: inherit;
+  color: #999;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.bio {
+  position: relative;
+}
+.bio img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.project p {
+  color: #666;
+}
+.project strong {
+  color: #f60;
+}
+.project > ol {
+  list-style-position: inside;
+  padding: 0;
+  
+}
+.project > ol > li {
+  margin-bottom: 24px;
+}
+.project > ol > li > header {
+  display: flex;
+  justify-content: space-between;
+}
+.project > ol > li h3 {
+  display: inline-block;
+}
+
+.skills {
+
+}
+#skills {
+  width: 600px;
+  height:300px;
+}
+.skills > .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.skills > .wrapper > :first-child {
+  margin-right: 24px;
+}
+.skills > .wrapper > #skills {
+
+}
+.skills > .wrapper > ul {
+  color: #666;
+}
+.skills > .wrapper strong {
+  color: #f60;
+}
+.skills > .wrapper > ul > li {
+  line-height: 1.5;
+  margin-bottom: 11px;
+}
+
+.career {
+
+}
+.career > h2 {
+
+}
+.career > header {
+  display: flex;
+  color: #666;
+  margin-bottom: 12px;
+}
+.career > header > h3 {
+  color: #333;
+  font-size: 18px;
+}
+.career > header > h4 {
+  font-size: 18px;
+  margin-left: 1em;
+}
+.career > header > span {
+  font-size: 18px;
+  margin-left: auto;
+}
+.career > ul {
+
+}

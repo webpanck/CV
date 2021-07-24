@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>我的简历</title>
+  <link rel="stylesheet" href="./style.css">
+  <style media="print">
+    body {
+      margin: 0;
+    }
+  </style>
+  <style>
+    @media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
+      article {
+        width: auto;
+        height: auto;
+        
+      }
+      .bio img {
+        display: none;
+      }
+      .skills .wrapper {
+        flex-direction: column;
+      }
+      #skills {
+        width: 100%;
+      }
+      .career header {
+        flex-direction: column;
+      }
+      .career header > h3,
+      .career header > h4,
+      .career header > span {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <section class="bio">
+      <h1>潘诚宽</h1>
+      <img src="images/1.jpeg" alt="头像" width="100">
+      <p>
+        男 | 26岁 | 前端开发工程师 | 武汉
+      </p>
+      <p>
+        手机：18008514399 | 微信：pck940805 | 邮箱：chengkuan0327@163.com
+      </p>
+    </section>
+
+    <section class="education">
+      <h2>教育经历</h2>
+      <ul>
+        <li>
+          <p>
+            <span><time>2017</time>~<time>2018</time></span>
+            英国利兹大学 土木工程学院 硕士
+          </p>
+        </li>
+        <li>
+          <p>
+            <span><time>2012</time>~<time>2016</time></span>
+            湖南科技大学 土木工程学院 本科
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="career">
+      <h2>工作经历</h2>
+      <header>
+        <h3>华为技术有限公司</h3>
+        <h4>产品经理</h4>
+        <span><time>2019年2月</time>~<time>2020年4月</time></span>
+      </header>
+      <ul>
+        <li>负责客户需求的挖掘，通过市场格局、客户网络痛点、行业趋势等分析，寻求切入点；</li>
+        <li>负责解决方案的策略和规划，结合客户的问题和现网情况，通过Proposal的递交、比拼测试、样板点展示、网络建设建议，将客户需求转化为适配的华为解决方案；</li>
+        <li>确保解决方案的竞争力，根据对相关竞争产品和ICT业界趋势的分析，识别解决方案风险以及风险规避措施；</li>
+        <li>协调产品、交付、研发、供应链，负责项目的交付落地以及解决有关技术与方案的问题。</li>
+      </ul>
+    </section>
+
+    <section class="project">
+      <h2>项目经历</h2>
+      <ol>
+        <li>
+          <header>
+            <h3>2048小游戏</h3>
+            <span>
+              <a href="#">源码链接</a>
+              <a href="#">项目预览</a>
+            </span>
+          </header>
+          <p>
+            一款基于 <strong>JavaScript</strong> / <strong>jQuery</strong> 的小游戏
+          </p>
+          <p>
+            描述1
+          </p>
+          <p>
+            描述2
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>2048小游戏</h3>
+            <span>
+              <a href="#">源码链接</a>
+              <a href="#">项目预览</a>
+            </span>
+          </header>
+          <p>
+            一款基于 JavaScript / jQuery 的小游戏
+          </p>
+          <p>
+            描述1
+          </p>
+          <p>
+            描述2
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>2048小游戏</h3>
+            <span>
+              <a href="#">源码链接</a>
+              <a href="#">项目预览</a>
+            </span>
+          </header>
+          <p>
+            一款基于 JavaScript / jQuery 的小游戏
+          </p>
+          <p>
+            描述1
+          </p>
+          <p>
+            描述2
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="skills">
+      <h2>技能</h2>
+      <div class="wrapper">
+        <div id="skills"></div>
+        <ul>
+          <li>熟练掌握静态页面制作技巧，能将设计稿<strong>完美还原</strong>成页面</li>
+          <li>熟悉<strong>前后端分离技术</strong>，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
+          <li>熟练掌握 <strong>Vue全家桶</strong> 的使用，包括 VueCLI、VueRouter、Vuex 等</li>
+          <li>熟悉 <strong>ES6</strong>，包括 let/const/Promise/await/解构赋值</li>
+          <li>了解 <strong>Node.js</strong> 的配置和使用</li>
+          <li>了解 <strong>Webpack</strong> 的配置和优化</li>
+        </ul>
+      </div>
+    </section>
+  </article>
+
+  <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.1.2/echarts.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
