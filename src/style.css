@@ -14,10 +14,10 @@ article {
   padding: 1em;
 }
 p {
-  margin: .5em 0;
+  margin: .4em 0;
 }
 h1 {
-  font-size: 38px;
+  font-size: 32px;
   margin-top: 10px;
 }
 ol, ul {
@@ -53,6 +53,9 @@ a {
   top: 0;
   right: 0;
 }
+.bio p {
+  margin-bottom: 20px;
+}
 
 .project p {
   color: #666;
@@ -80,7 +83,7 @@ a {
 
 }
 #skills {
-  width: 600px;
+  width: 550px;
   height:300px;
 }
 .skills > .wrapper {
@@ -100,8 +103,8 @@ a {
   color: #f60;
 }
 .skills > .wrapper > ul > li {
-  line-height: 1.5;
-  margin-bottom: 11px;
+  line-height: 1.4;
+  margin-bottom: 12px;
 }
 
 .career {
@@ -127,6 +130,6 @@ a {
   font-size: 18px;
   margin-left: auto;
 }
-.career > ul {
-
+.career > ul > li {
+  padding: 3px;
 }

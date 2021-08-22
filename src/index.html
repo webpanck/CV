@@ -4,11 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-  <title>我的简历</title>
+  <title>潘诚宽的简历</title>
   <link rel="stylesheet" href="./style.css">
   <style media="print">
     body {
       margin: 0;
+    }
+    .page2 {
+      page-break-before: always;
+      margin-top: 30px;
     }
   </style>
   <style>
@@ -39,6 +43,9 @@
         margin: 0;
       }
     }
+    @media print {
+      #skills{display:none;}
+    }
   </style>
 </head>
 <body>
@@ -50,41 +57,8 @@
         男 | 26岁 | 前端开发工程师 | 武汉
       </p>
       <p>
-        手机：18008514399 | 微信：pck940805 | 邮箱：chengkuan0327@163.com
+        手机：18008514399 | 微信：panck_0851 | 邮箱：chengkuan0327@163.com
       </p>
-    </section>
-
-    <section class="education">
-      <h2>教育经历</h2>
-      <ul>
-        <li>
-          <p>
-            <span><time>2017</time>~<time>2018</time></span>
-            英国利兹大学 土木工程学院 硕士
-          </p>
-        </li>
-        <li>
-          <p>
-            <span><time>2012</time>~<time>2016</time></span>
-            湖南科技大学 土木工程学院 本科
-          </p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="career">
-      <h2>工作经历</h2>
-      <header>
-        <h3>华为技术有限公司</h3>
-        <h4>产品经理</h4>
-        <span><time>2019年2月</time>~<time>2020年4月</time></span>
-      </header>
-      <ul>
-        <li>负责客户需求的挖掘，通过市场格局、客户网络痛点、行业趋势等分析，寻求切入点；</li>
-        <li>负责解决方案的策略和规划，结合客户的问题和现网情况，通过Proposal的递交、比拼测试、样板点展示、网络建设建议，将客户需求转化为适配的华为解决方案；</li>
-        <li>确保解决方案的竞争力，根据对相关竞争产品和ICT业界趋势的分析，识别解决方案风险以及风险规避措施；</li>
-        <li>协调产品、交付、研发、供应链，负责项目的交付落地以及解决有关技术与方案的问题。</li>
-      </ul>
     </section>
 
     <section class="project">
@@ -92,56 +66,67 @@
       <ol>
         <li>
           <header>
-            <h3>2048小游戏</h3>
+            <h3>Donuts UI</h3>
             <span>
               <a href="#">源码链接</a>
               <a href="#">项目预览</a>
             </span>
           </header>
           <p>
-            一款基于 <strong>JavaScript</strong> / <strong>jQuery</strong> 的小游戏
+            一款基于 <strong>Vue</strong> / <strong>SCSS</strong> / <strong>Mocha</strong> 的 UI 框架。
           </p>
           <p>
-            描述1
+            主要组件有按钮、网格、输入框、布局、<strong>弹出层</strong>、标签、<strong>弹出提示</strong>等。
           </p>
           <p>
-            描述2
+            每个组件均经历从<strong>需求分析</strong>到<strong>单元测试</strong>，并用 TravisCI 实现<strong>持续集成</strong>，使用 VuePress 制作官方文档，发布于 npmjs.org。
+          </p>
+          <p>
+            制作过程让我对 Vue 的常用特性更加熟悉，同时对单元测试的重要性有了新的认识。
           </p>
         </li>
         <li>
           <header>
-            <h3>2048小游戏</h3>
+            <h3>鲸落记账</h3>
             <span>
               <a href="#">源码链接</a>
               <a href="#">项目预览</a>
             </span>
           </header>
           <p>
-            一款基于 JavaScript / jQuery 的小游戏
+            一款基于 <strong>Vue</strong> / <strong>TypeScript</strong> 的移动端单页面应用。
           </p>
           <p>
-            描述1
+            这是我根据自己的需求，开发的极简记账应用，特点是快速记账，还可以通过图表查看自己的消费习惯。
           </p>
           <p>
-            描述2
+            项目包含了记账、标签和统计页面，实现了<strong>记账</strong>、<strong>标签管理</strong>和<strong>数据统计</strong>等功能。
+          </p>
+          <p>
+            项目使用 Vue CLI 创建项目模板，使用 SCSS 作 <strong>CSS预处理</strong>，通过 VueRouter 实现<strong>路由跳转</strong>，通过 Vuex 实现<strong>状态管理</strong>，并使用 LocalStorage 实现了应用数据的<strong>本地存储</strong>功能。
+          </p>
+          <p>
+            源代码几乎完全使用 TypeScript 实现，让我熟悉了 Class 风格的 Vue 组件编写，以及装饰器等语法。
           </p>
         </li>
         <li>
           <header>
-            <h3>2048小游戏</h3>
+            <h3>电商后台管理系统</h3>
             <span>
               <a href="#">源码链接</a>
-              <a href="#">项目预览</a>
             </span>
           </header>
           <p>
-            一款基于 JavaScript / jQuery 的小游戏
+            一款基于 <strong>Vue</strong> / <strong>AXIOS</strong> / <strong>Echarts</strong> 的后台管理系统。
           </p>
           <p>
-            描述1
+            项目包含首页、用户列表、权限列表、角色列表、商品列表、订单列表、数据统计等功能。
           </p>
           <p>
-            描述2
+            实现了登录退出、添加和修改用户、<strong>分配权限和角色</strong>、<strong>商品分类</strong>以及图表展示数据等。
+          </p>
+          <p>
+            项目使用 Grid 作页面布局，以 VueCLI 为基础创建项目模版，使用 Less 作 <strong>CSS预处理</strong>，引用 Element UI 作交互。通过 VueRouter 实现<strong>路由跳转</strong>、<strong>异步加载</strong>、<strong>权限认证</strong>等，用 AXIOS <strong>获取数据</strong>。
           </p>
         </li>
       </ol>
@@ -155,13 +140,103 @@
           <li>熟练掌握静态页面制作技巧，能将设计稿<strong>完美还原</strong>成页面</li>
           <li>熟悉<strong>前后端分离技术</strong>，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
           <li>熟练掌握 <strong>Vue全家桶</strong> 的使用，包括 VueCLI、VueRouter、Vuex 等</li>
-          <li>熟悉 <strong>ES6</strong>，包括 let/const/Promise/await/解构赋值</li>
+          <li>熟悉 <strong>ES6</strong>，包括 let/Promise/await/解构赋值</li>
+          <li>了解 <strong>TypeScript</strong> 的使用</li>
           <li>了解 <strong>Node.js</strong> 的配置和使用</li>
           <li>了解 <strong>Webpack</strong> 的配置和优化</li>
         </ul>
       </div>
     </section>
+
+    <section class="project">
+      <h2>开源项目</h2>
+      <ol>
+        <li>
+          <header>
+            <h3>Purple音乐</h3>
+            <span>
+              <a href="#">源码链接</a>
+              <a href="#">项目预览</a>
+            </span>
+          </header>
+          <p>
+            一款基于 <strong>原生JavaScript</strong> / <strong>SVG</strong> / <strong>CSS3</strong> 的音乐播放器
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>2048小游戏</h3>
+            <span>
+              <a href="#">源码链接</a>
+              <a href="#">项目预览</a>
+            </span>
+          </header>
+          <p>
+            这是我在学习 <strong>JavaScript</strong> 和 <strong>jQuery</strong> 时制作的的小游戏
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>闪电皮卡丘</h3>
+            <span>
+              <a href="#">源码链接</a>
+              <a href="#">项目预览</a>
+            </span>
+          </header>
+          <p>
+            这是我在学习 <strong>CSS3</strong> 和 <strong>动画</strong> 时制作的一个会放电的皮卡丘
+          </p>
+        </li>
+        <li>
+          <header>
+            <h3>简易小画板</h3>
+            <span>
+              <a href="#">源码链接</a>
+              <a href="#">项目预览</a>
+            </span>
+          </header>
+          <p>
+            我在学习 <strong>Canvas</strong> 时做的一个小作品
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="career">
+      <h2>工作经历</h2>
+      <header>
+        <h3>华为技术有限公司</h3>
+        <h4>产品经理</h4>
+        <span><time>2019年2月</time>~<time>2020年4月</time></span>
+      </header>
+      <ul>
+        <li>负责客户需求的挖掘，通过市场格局、客户网络痛点、行业趋势等分析，寻求切入点。</li>
+        <li>负责解决方案的策略和规划，结合客户的问题和现网情况，将客户需求转化为适配的华为解决方案。</li>
+        <li>确保解决方案的竞争力，根据对相关竞争产品和ICT业界趋势的分析，识别解决方案风险以及规避措施。</li>
+        <li>协调产品、交付、研发、供应链，负责项目的交付落地以及解决有关技术与方案的问题。</li>
+      </ul>
+    </section>
+
+    <section class="education">
+      <h2>教育经历</h2>
+      <ul>
+        <li>
+          <p>
+            <span><time>2017</time>~<time>2018</time></span>
+            英国利兹大学 水卫生健康工程 硕士
+          </p>
+        </li>
+        <li>
+          <p>
+            <span><time>2012</time>~<time>2016</time></span>
+            湖南科技大学 给水排水工程 本科
+          </p>
+        </li>
+      </ul>
+    </section>
   </article>
+
+  
 
   <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.1.2/echarts.min.js"></script>
   <script src="./main.js"></script>
