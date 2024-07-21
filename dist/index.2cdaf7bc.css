@@ -8,12 +8,12 @@ body {
 }
 
 article {
+  background: #fff;
   width: 21cm;
   min-height: 29.7cm;
-  background: white;
   margin: 0 auto;
-  overflow: auto;
   padding: 1em;
+  overflow: auto;
 }
 
 p {
@@ -21,9 +21,9 @@ p {
 }
 
 h1 {
-  font-size: 32px;
   margin-top: 5px;
   margin-bottom: 10px;
+  font-size: 32px;
 }
 
 h2 {
@@ -31,11 +31,10 @@ h2 {
   margin-bottom: 8px;
 }
 
-ol,
-ul {
-  list-style: none;
-  padding: 0;
+ol, ul {
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 li {
@@ -43,26 +42,22 @@ li {
 }
 
 strong {
-  font-weight: normal;
   color: #f60;
+  font-weight: normal;
 }
 
-h3,
-h4,
-h5 {
+h3, h4, h5 {
   margin: 0;
 }
 
-h4,
-h5 {
+h4, h5 {
   font-weight: normal;
 }
 
 a {
-  color: inherit;
   color: #999;
-  text-decoration: none;
   border-bottom: 1px solid;
+  text-decoration: none;
 }
 
 .bio {
@@ -75,32 +70,32 @@ a {
   right: 0;
 }
 
-.career>ol>li {
+.career > ol > li {
   margin-bottom: 8px;
 }
 
-.career>ol>li>header {
-  display: flex;
+.career > ol > li > header {
   color: #666;
   margin-bottom: 4px;
+  display: flex;
 }
 
-.career>ol>li>header>h3 {
+.career > ol > li > header > h3 {
   color: #333;
   font-size: 18px;
 }
 
-.career>ol>li>header>h4 {
-  font-size: 18px;
+.career > ol > li > header > h4 {
   margin-left: 1.5em;
-}
-
-.career>ol>li>header>span {
   font-size: 18px;
-  margin-left: auto;
 }
 
-.career>ol>li>ul>li {
+.career > ol > li > header > span {
+  margin-left: auto;
+  font-size: 18px;
+}
+
+.career > ol > li > ul > li {
   padding: 5px 3px;
 }
 
@@ -117,17 +112,17 @@ a {
 }
 
 .project .project-item {
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
 
 .project li {
-  list-style-type: disc;
   margin-left: 1.5em;
+  list-style-type: disc;
 }
 
 .project header {
-  display: flex;
   justify-content: space-between;
+  display: flex;
 }
 
 #skills {
@@ -135,32 +130,31 @@ a {
   height: 300px;
 }
 
-.skills>.wrapper {
-  display: flex;
+.skills > .wrapper {
   justify-content: space-between;
+  display: flex;
 }
 
-.skills>.wrapper> :first-child {
+.skills > .wrapper > :first-child {
   margin-right: 24px;
 }
 
-/* .skills>.wrapper>#skills {} */
-
-.skills>.wrapper>ul {
+.skills > .wrapper > ul {
   color: #666;
 }
 
-.skills>.wrapper strong {
+.skills > .wrapper strong {
   color: #f60;
 }
 
-.skills>.wrapper>ul>li {
-  line-height: 1.4;
+.skills > .wrapper > ul > li {
   margin-bottom: 5px;
+  line-height: 1.4;
 }
 
 .education li {
-  padding: 0px 10px;
-  display: flex;
   justify-content: space-between;
+  padding: 0 10px;
+  display: flex;
 }
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
