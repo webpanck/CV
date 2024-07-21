@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./style.css">
   <style media="print">
     body {
-      margin: -20px;
+      margin: -15px;
       font-size: 14px;
     }
 
@@ -180,10 +180,25 @@
         flex-direction: column;
       }
 
+      .career>ol>li>ul>li {
+        list-style: none;
+        margin: 0;
+      }
+
       .career>ol>li>header>h3,
       .career>ol>li>header>h4,
       .career>ol>li>header>span {
         margin: 0;
+      }
+
+      .education li {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .education .programme {
+        padding: 0;
       }
 
     }
@@ -230,8 +245,7 @@
             </li>
             <li>
               负责<strong>新⼀代分布式DTP交易系统</strong> 50% 的开发⼯作，项⽬使⽤ Vue 全家桶开发，包含⽤户管理、权限审核、
-              证券⿊⽩名单设置、柜机双重权限管理，审核流程跟踪，操作⽇志展示及信息的查询设置（客户、银⾏、资
-              ⾦、证券…）等百余个⻚⾯。负责对项目 Webpack 配置进行优化，提高项目的构建效率和运行性能。
+              证券⿊⽩名单设置、柜机双重权限管理，审核流程跟踪，操作⽇志展示及信息的查询设置等百余个⻚⾯。负责对项目 Webpack 配置进行优化，提高项目的构建效率和运行性能。
               ⽬前已交付国内多个⼤型券商公司并投⼊使⽤。
             </li>
             <li>参与公司组件库的维护，组织技术分享，为新⼈提供技术指导。</li>
@@ -360,20 +374,20 @@
       <h2>教育经历</h2>
       <ul>
         <li>
-          <span>
+          <span class="time">
             <time>2017/9</time>~<time>2018/11</time>
           </span>
-          <span>英国利兹大学</span>
-          <span>水卫生健康工程</span>
-          <span>硕士</span>
+          <span class="university">英国利兹大学</span>
+          <span class="programme">水卫生健康工程</span>
+          <span class="degree">硕士</span>
         </li>
         <li>
-          <span>
+          <span class="time">
             <time>2012/9</time>~<time>2016/6</time>
           </span>
-          <span>湖南科技大学</span>
-          <span>给水排水工程</span>
-          <span>学士</span>
+          <span class="university">湖南科技大学</span>
+          <span class="programme">给水排水工程</span>
+          <span class="degree">学士</span>
         </li>
       </ul>
     </section>
