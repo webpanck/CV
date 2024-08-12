@@ -41,7 +41,7 @@
 
     .career>ol>li {
       padding: 0px;
-      margin: 2px;
+      margin: 0px;
     }
 
     .career>ol>li>header {
@@ -75,12 +75,13 @@
     }
 
     .project .project-item {
-      margin-bottom: 2px;
+      margin-bottom: 1px;
     }
 
     .project p {
-      margin-top: 1px;
-      margin-bottom: 1px;
+      margin: 0px;
+      /* margin-top: 1px;
+      margin-bottom: 1px; */
     }
 
     .project li {
@@ -231,13 +232,13 @@
             <span><time>2021年11月</time>~<time>至今</time></span>
           </header>
           <ul>
-            <li>
+            <!-- <li>
               深度参与<strong>证⾦信息平台券源管理项⽬</strong>，从 0 到 1 独立完成该证券管理平台的设计和开发，
               包含用户登录、交易日历管理、黑名单设置和交易进程实时跟踪等共 50 多个业务模块，负责从架构搭建到打包部署的完整流程。
               项⽬基于 Vue 开发，配合 Element UI 框架，使⽤ Vuex 进⾏状态管理，通过 VueRouter 实现路由跳转和异步加载等功能，
               并使⽤ Webpack 完成打包构建，是部门首个全面 TS 化的项目。⽬前已在多个客户的测试环境进⾏验证。
             </li>
-            <!-- <li>报表和日志文件的上传实现大文件分片上传及断点续传，提高上传速度，降低中断风险，减轻服务器负载，并支持进度监控，为用户提供了更好的反馈体验</li> -->
+            <li>报表和日志文件的上传实现大文件分片上传及断点续传，提高上传速度，降低中断风险，减轻服务器负载，并支持进度监控，为用户提供了更好的反馈体验</li>
             <li>
               独⽴完成<strong>分布式全球柜台项⽬</strong> 的前端开发，实现了用户登录、权限管理、证券交易、多信息查询设置、
               实时行情展示、实时订单监控、订单日志推送和报表预览打印等主要功能。封装 WebSocket 组件，实现断网重连和自动心跳等功能，
@@ -248,7 +249,30 @@
               证券⿊⽩名单设置、柜机双重权限管理，审核流程跟踪，操作⽇志展示及信息的查询设置等百余个⻚⾯。负责对项目 Webpack 配置进行优化，提高项目的构建效率和运行性能。
               ⽬前已交付国内多个⼤型券商公司并投⼊使⽤。
             </li>
-            <li>参与公司组件库的维护，组织技术分享，为新⼈提供技术指导。</li>
+            <li>参与公司组件库的维护，组织技术分享，为新⼈提供技术指导。</li> -->
+            <li>
+              深度参与<strong>证⾦信息平台券源管理项⽬</strong>，独⽴开发整个前端共 50 多个业务模块（包含⽤户登录、交易⽇历管
+              理、⿊名单设置和交易进程实时跟踪等），负责从架构搭建到打包部署的完整流程。项⽬基于 Vue 开发，
+              配合 Element UI 框架，使⽤ Vuex 进⾏状态管理，通过 VueRouter 实现路由跳转和异步加载等功能，并使
+              ⽤ Webpack 完成打包构建。作为团队中⾸个使⽤ TypeScript 实现的项⽬，迈出了组内项⽬由 TypeScript
+              替换 JavaScript 的第⼀步，⽬前已在多个客户的测试环境进⾏验证。
+            </li>
+            <li>
+              负责<strong>分布式全球柜台项⽬</strong>的前端开发，包含⽤户登录、权限管理、证券交易、多信息查询设置、
+              实时⾏情展示、实时订单监控、订单⽇志推送和报表预览打印等 100 多个⻚⾯模块。采⽤ WebSocket 实时
+              通信替换原定的轮询⽅案并进⾏⼆次封装，在其他项⽬中被多次复⽤，⽬前项⽬已交付⾹港某⼤型券商。
+            </li>
+            <li>
+              负责<strong>新⼀代分布式DTP交易系统</strong>的开发⼯作，项⽬使⽤ Vue 全家桶开发，包含⽤户管理、权限审核、
+              证券⿊⽩名单设置、柜机双重权限管理，审核流程跟踪，操作⽇志展示及信息的查询设置（客户、银⾏、资
+              ⾦、证券…）等百余个⻚⾯。⽬前已交付国内多个⼤型券商公司并投⼊使⽤。
+            </li>
+            <li>
+              为公司内部组件库贡献代码（input，table等组件的⼆次封装），在组内进⾏技术分享（如 Vue 3 的介绍和
+              从 Vue 2 到 Vue 3 的过渡，以及 TypeScript 对⽐ JavaScript 的优势和替换的必要性等话题），为新⼈提
+              供技术指导。
+            </li>
+            <li>负责团队与项⽬中公共组件与⾮业务模块的封装，在多个项⽬中复⽤，提升了开发效率。</li>
           </ul>
         </li>
         <li>
@@ -294,10 +318,10 @@
           </span>
         </header>
         <p>
-          技术栈：React+TSX+TypeScript+ReactRouter+Zustand+Axios+JWT+Vite+Echarts
+          技术栈：React + TSX + TypeScript + ReactRouter + Zustand + Axios + JWT + Vite + Echarts
         </p>
         <ol>
-          <li>本人独立实现的移动端单页面应用，实现了用户登录、记账（金额/备注/标签/收入支出分类）、标签管理、查看历史、数据统计等功能</li>
+          <li>本人独立实现的移动端单页面应用，实现了用户登录、记账、标签管理、查看历史、数据统计等功能</li>
           <li>项目中大量使用 React Hooks，并封装了多个自定义 Hooks，增强了组件的灵活性和复用性</li>
           <li>使用 TSX 语法编写 React 组件，利用 TSX 结合 TypeScript 的静态类型检查，确保了代码的可靠性</li>
           <li>利用 JWT 实现了用户登录验证和访问权限控制，确保系统数据的安全性和完整性</li>
@@ -312,7 +336,7 @@
           </span>
         </header>
         <p>
-          技术栈：Vue3+TypeScript+VueRouter+Vuex
+          技术栈：Vue3 + TypeScript + VueRouter + Vite
         </p>
         <ol>
           <li>个人的 UI 组件库，开发了 Switch、Button、Dialog、Tabs 等常用 UI 组件</li>
@@ -329,7 +353,7 @@
           </span>
         </header>
         <p>
-          技术栈：Vue+TypeScript+VueRouter+Vite
+          技术栈：Vue + TypeScript + VueRouter + Vuex
         </p>
         <ol>
           <li>实现了记账、标签管理和数据统计等核心功能，同时实现了应用数据的本地存储功能</li>
@@ -345,7 +369,7 @@
           </span>
         </header>
         <p>
-          技术栈：Vue+SCSS+Mocha
+          技术栈：Vue + SCSS + Mocha
         </p>
         <ol>
           <li>个人的 UI 组件库，开发了按钮、网格、输入框、布局、弹出层、标签、弹出提示等常用 UI 组件</li>
@@ -361,7 +385,7 @@
           </span>
         </header>
         <p>
-          技术栈：React+ReactRouter+Echarts
+          技术栈：React + ReactRouter + Echarts
         </p>
         <ol>
           <li>实现了柱形图、折线图、饼图、地图和表格等常用数据可视化图表，支持实时数据更新和动画交互效果</li>

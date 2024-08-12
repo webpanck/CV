@@ -82,7 +82,7 @@ a {
 .career>ol>li>header {
   display: flex;
   color: #666;
-  margin-bottom: 4px;
+  /* margin-bottom: 4px; */
 }
 
 .career>ol>li>header>h3 {
