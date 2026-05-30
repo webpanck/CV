@@ -44,7 +44,7 @@ li {
 
 strong {
   font-weight: normal;
-  color: #f60;
+  color: #d85500;
 }
 
 h3,
@@ -116,7 +116,7 @@ a {
 }
 
 .project strong {
-  color: #f60;
+  color: #d85500;
 }
 
 .project .project-item {
@@ -154,7 +154,7 @@ a {
 }
 
 .skills>.wrapper strong {
-  color: #f60;
+  color: #d85500;
 }
 
 .skills>.wrapper>ul>li {

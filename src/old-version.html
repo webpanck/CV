@@ -4,85 +4,97 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
   <title>潘诚宽的简历</title>
-  <link rel="stylesheet" href="/index.2cdaf7bc.css">
-  <style media="print">body {
-  margin: -15px;
-  font-size: 14px;
-}
+  <link rel="stylesheet" href="./style.css">
+  <style media="print">
+    body {
+      margin: -15px;
+      font-size: 14px;
+    }
 
-h1 {
-  margin: 0;
-  font-size: 24px;
-}
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
 
-h2 {
-  margin-top: 2px;
-  margin-bottom: 1px;
-  font-size: 18px;
-}
+    h2 {
+      font-size: 18px;
+      margin-top: 2px;
+      margin-bottom: 1px;
+    }
 
-h3, h4 {
-  margin: 0;
-  font-size: 14px;
-}
+    h3 {
+      font-size: 14px;
+      margin: 0;
+    }
 
-.bio p {
-  margin-bottom: 0;
-}
+    h4 {
+      font-size: 14px;
+      margin: 0;
+    }
 
-.career > ol > li {
-  margin: 0;
-  padding: 0;
-}
+    .bio p {
+      margin-bottom: 0px;
+    }
 
-.career > ol > li > header {
-  color: #666;
-  display: flex;
-}
+    .career>ol>li {
+      padding: 0px;
+      margin: 0px;
+    }
 
-.career > ol > li > header > h3 {
-  margin: 0;
-  font-size: 14px;
-}
+    .career>ol>li>header {
+      display: flex;
+      color: #666;
+    }
 
-.career > ol > li > header > h4 {
-  margin: 0 0 0 1.5em;
-  font-size: 14px;
-}
+    .career>ol>li>header>h3 {
+      font-size: 14px;
+      margin: 0;
+    }
 
-.career > ol > li > header > span {
-  margin-left: auto;
-  font-size: 14px;
-}
+    .career>ol>li>header>h4 {
+      font-size: 14px;
+      margin: 0;
+      margin-left: 1.5em;
+    }
 
-.career > ol > li > ul > li {
-  padding: 1.5px 0;
-  line-height: 1.2;
-}
+    .career>ol>li>header>span {
+      font-size: 14px;
+      margin-left: auto;
+    }
 
-.skills > .wrapper > ul > li {
-  line-height: 1.1;
-}
+    .career>ol>li>ul>li {
+      line-height: 1.2;
+      padding: 1.5px 0px;
+    }
 
-.project .project-item {
-  margin-bottom: 1px;
-}
+    .skills>.wrapper>ul>li {
+      line-height: 1.1;
+    }
 
-.project p {
-  margin: 0;
-}
+    .project .project-item {
+      margin-bottom: 1px;
+    }
 
-.project li {
-  line-height: 1.2;
-}
+    .project p {
+      margin: 0px;
+      /* margin-top: 1px;
+      margin-bottom: 1px; */
+    }
 
-.education li {
-  padding: 0;
-  line-height: 1.1;
-}
-</style>
+    .project li {
+      line-height: 1.2;
+      /* margin-bottom: 6px;
+      margin-left: 1.5em; */
+    }
+
+    .education li {
+      line-height: 1.1;
+      padding: 0;
+    }
+  </style>
   <!-- <style media="print">
     body {
       margin: 8px;
@@ -141,58 +153,63 @@ h3, h4 {
       margin-top: 30px;
     }
   </style> -->
-  <style>@media (width <= 500px) {
-  body {
-    margin: 0;
-  }
+  <style>
+    @media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
 
-  article {
-    width: auto;
-    height: auto;
-  }
+      article {
+        width: auto;
+        height: auto;
 
-  .bio img {
-    display: none;
-  }
+      }
 
-  .skills .wrapper {
-    flex-direction: column;
-  }
+      .bio img {
+        display: none;
+      }
 
-  #skills {
-    width: 100%;
-  }
+      .skills .wrapper {
+        flex-direction: column;
+      }
 
-  .career > ol > li > header {
-    flex-direction: column;
-  }
+      #skills {
+        width: 100%;
+      }
 
-  .career > ol > li > ul > li {
-    margin: 0;
-    list-style: none;
-  }
+      .career>ol>li>header {
+        flex-direction: column;
+      }
 
-  .career > ol > li > header > h3, .career > ol > li > header > h4, .career > ol > li > header > span {
-    margin: 0;
-  }
+      .career>ol>li>ul>li {
+        list-style: none;
+        margin: 0;
+      }
 
-  .education li {
-    justify-content: space-between;
-    padding: 0;
-    display: flex;
-  }
+      .career>ol>li>header>h3,
+      .career>ol>li>header>h4,
+      .career>ol>li>header>span {
+        margin: 0;
+      }
 
-  .education .programme {
-    padding: 0;
-  }
-}
+      .education li {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+      }
 
-@media print {
-  #skills {
-    display: none;
-  }
-}
-</style>
+      .education .programme {
+        padding: 0;
+      }
+
+    }
+
+    @media print {
+      #skills {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -283,7 +300,7 @@ h3, h4 {
           <li>熟悉 <strong>TypeScript</strong> 的使用</li>
           <li>熟练掌握 <strong>HTML</strong>、<strong>CSS</strong>、<strong>SCSS</strong>
             、<strong>JavaScript</strong> 和 <strong>ES6 规范</strong>，注重代码质量
-          </li><li>熟悉<strong>前后端分离技术</strong>，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
+          <li>熟悉<strong>前后端分离技术</strong>，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
           <li>熟悉 <strong>Webpack</strong> 的使用，了解其打包流程，有性能优化实践了解，了解 <strong>Vite</strong> 的配置和优化</li>
           <li>曾有海外学习经历，能够阅读<strong>英文文档</strong></li>
         </ul>
@@ -403,7 +420,7 @@ h3, h4 {
 
 
   <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.1.2/echarts.min.js"></script>
-  <script src="/index.de158e3a.js"></script>
-<script src="/CV.59712999.js"></script></body>
+  <script src="./main.js"></script>
+</body>
 
 </html>

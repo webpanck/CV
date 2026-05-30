@@ -218,7 +218,7 @@
       <h1>潘诚宽</h1>
       <!-- <img src="images/1.jpeg" alt="头像" width="100"> -->
       <p>
-        硕士 ｜ 前端开发工程师 ｜ 手机：18008514399 ｜ 邮箱：18008514399@163.com
+        硕士 ｜ 前端开发工程师 ｜ 手机：13581973063 ｜ 邮箱：chengkuan0851@163.com
       </p>
     </section>
 
@@ -227,29 +227,47 @@
       <ol>
         <li>
           <header>
+            <h3>北京城市网邻信息技术有限公司（58同城）</h3>
+            <h4>前端工程师</h4>
+            <span><time>2025年4月</time>~<time>至今</time></span>
+          </header>
+          <ul>
+            <li>
+              负责<strong>Gumtree Services 产品线核心业务研发与架构演进</strong>（<strong>React + TS Monorepo / Node.js</strong>）：
+              覆盖卖家发帖（SYI）、搜索结果页（SRP）、商品详情页（VIP）及 Services 落地页等高流量场景，与 Node 服务端紧密协作完成页面渲染与业务 API 调用。
+              主导 Seller Skills 上线，重构技能选择、搜索与展示流程，显著降低卖家配置成本并接入数据分析追踪。在 SRP/VIP 入口打通 Bark 求职线索能力，
+              设计分步引导、表单校验与结果反馈，支持 App 内 WebView，支撑一期约 6 万+ 帖子及后续商业化收入增长。
+              持续迭代 Bark（个性化需求问答、线索 UI 优化）及 Services 类目能力（紧急服务、综合搜卡片、报价请求改造、技能搜索优化），全面提升线索质量与转化。
+            </li>
+            <li>
+              <strong>高并发 Node.js 微服务建设</strong>（<strong>OG 动态图生成</strong>）：参与并主导基于 Next.js 的 Gumtree OG 动态图片生成微服务建设。
+              负责基于广告 ID 从 fullad API 拉取数据、多平台与多模版布局的服务端渲染出图（PNG/WebP 等）及默认图降级等核心链路。
+              完成了自定义 HTTP 入口、CDN 长缓存策略、Winston 日志与 K8s 健康检查等全链路生产化能力建设；参与 Docker 镜像与 Helm 在 K8s 上的部署配置，
+              服务经 Jenkins 构建并由 Spinnaker 发布（团队标准流水线）。使用 TypeScript + Jest/集成测试保障接口与配置逻辑质量，
+              通过默认图回退与错误兜底支撑社交平台 Open Graph 分享图的稳定产出。
+            </li>
+            <li>
+              <strong>主导 Core Web Vitals 深度性能优化</strong>（<strong>INP & TBT 专项治理</strong>）：针对英国站前端 Monorepo 实施性能攻坚。
+              INP 侧通过 requestAnimationFrame + setTimeout 将 GTM/Redux 移出点击关键路径、实现搜索框 250ms 防抖与本地 state/乐观 UI、列表延后渲染，
+              并在 hydration 阶段利用 yieldToMain / executeWithYield 拆分第三方与广告初始化；TBT 侧将 LUX/Clarity/One Tap 等非关键脚本改为 requestIdleCallback 动态加载，
+              并对广告 initDisplay/initPrebid 链路做多段主线程让出，同时移除 dataLayer Base64 同步解码。
+              最终实现 Google Search Console 问题 URL 占比由 90.85% 大幅降至 48.93%，SpeedCurve TBT 由 3600ms 降至 2500ms（降幅约 30%）。
+            </li>
+            <li>
+              <strong>前端工程化与 AI 效能提升</strong>（<strong>Cursor 规范化落地</strong>）：在日常 Monorepo 开发中深度使用 AI 辅助编程（功能实现、重构、测试与问题排查），
+              提升个人及团队交付效率。针对仓库特点编写并维护 .cursorrules，明确包边界、样式 token、GrowthBook、测试与 BFF 等架构约束，大幅减少 AI 生成代码与团队规范不一致的返工率。
+              新增 5 个 Cursor Skill 并编写 cursorrules-说明.md、ai-skills-说明.md 等工程文档，将样式、实验、新页面、Jest/Cypress 等高频场景流程化，
+              成功赋能团队复用与新员工 Onboarding 流程。
+            </li>
+          </ul>
+        </li>
+        <li>
+          <header>
             <h3>上海金仕达软件科技股份有限公司</h3>
             <h4>前端工程师</h4>
             <span><time>2021年11月</time>~<time>2025年2月</time></span>
           </header>
           <ul>
-            <!-- <li>
-              深度参与<strong>证⾦信息平台券源管理项⽬</strong>，从 0 到 1 独立完成该证券管理平台的设计和开发，
-              包含用户登录、交易日历管理、黑名单设置和交易进程实时跟踪等共 50 多个业务模块，负责从架构搭建到打包部署的完整流程。
-              项⽬基于 Vue 开发，配合 Element UI 框架，使⽤ Vuex 进⾏状态管理，通过 VueRouter 实现路由跳转和异步加载等功能，
-              并使⽤ Webpack 完成打包构建，是部门首个全面 TS 化的项目。⽬前已在多个客户的测试环境进⾏验证。
-            </li>
-            <li>报表和日志文件的上传实现大文件分片上传及断点续传，提高上传速度，降低中断风险，减轻服务器负载，并支持进度监控，为用户提供了更好的反馈体验</li>
-            <li>
-              独⽴完成<strong>分布式全球柜台项⽬</strong> 的前端开发，实现了用户登录、权限管理、证券交易、多信息查询设置、
-              实时行情展示、实时订单监控、订单日志推送和报表预览打印等主要功能。封装 WebSocket 组件，实现断网重连和自动心跳等功能，
-              在其他项⽬中被多次复⽤。并对第三方库 vue-pdf 开发对应补丁，实现 PDF 电子签章的预览和打印。⽬前项⽬已交付⾹港某⼤型券商。
-            </li>
-            <li>
-              负责<strong>新⼀代分布式DTP交易系统</strong> 50% 的开发⼯作，项⽬使⽤ Vue 全家桶开发，包含⽤户管理、权限审核、
-              证券⿊⽩名单设置、柜机双重权限管理，审核流程跟踪，操作⽇志展示及信息的查询设置等百余个⻚⾯。负责对项目 Webpack 配置进行优化，提高项目的构建效率和运行性能。
-              ⽬前已交付国内多个⼤型券商公司并投⼊使⽤。
-            </li>
-            <li>参与公司组件库的维护，组织技术分享，为新⼈提供技术指导。</li> -->
             <li>
               深度参与<strong>证⾦信息平台券源管理项⽬</strong>，独⽴开发整个前端共 50 多个业务模块（包含⽤户登录、交易⽇历管
               理、⿊名单设置和交易进程实时跟踪等），负责从架构搭建到打包部署的完整流程。项⽬基于 Vue 开发，
@@ -292,105 +310,15 @@
     <section class="skills">
       <h2>技能</h2>
       <div class="wrapper">
-        <div id="skills"></div>
+        <!-- <div id="skills"></div> -->
         <ul>
-          <li>熟悉 <strong>React</strong> / Redux / ReactRouter / Hooks API 的使用</li>
-          <li>熟悉 <strong>Vue 3</strong> 及其生态，包括 VueRouter、Pinia 等</li>
-          <li>熟练掌握 <strong>Vue 2 全家桶</strong> 的使用，包括 VueCLI、VueRouter、Vuex 等</li>
-          <li>熟悉 <strong>TypeScript</strong> 的使用</li>
-          <li>熟练掌握 <strong>HTML</strong>、<strong>CSS</strong>、<strong>SCSS</strong>
-            、<strong>JavaScript</strong> 和 <strong>ES6 规范</strong>，注重代码质量
-          <li>熟悉<strong>前后端分离技术</strong>，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
-          <li>熟悉 <strong>Webpack</strong> 的使用，了解其打包流程，有性能优化实践了解，了解 <strong>Vite</strong> 的配置和优化</li>
-          <li>曾有海外学习经历，能够阅读<strong>英文文档</strong></li>
+          <li>精通 <strong>React / Vue 2 & 3 全家桶</strong>体系，具备大型 <strong>Monorepo</strong> 仓库架构设计与数百个复杂业务模块的独立交付能力。</li>
+          <li>熟练运用 <strong>Node.js (Next.js)</strong> 构建<strong>高并发 SSR 微服务</strong>，并具备 <strong>K8s 容器化部署</strong>、标准 <strong>CI/CD</strong> 流水线及全链路生产化保障经验。</li>
+          <li>精通 <strong>INP</strong>（交互响应）与 <strong>TBT</strong>（主线程阻塞）底层指标治理，熟练运用<strong>任务分片调度</strong>、<strong>异步 Hydration</strong> 及网络/重渲染优化手段攻坚高流量瓶颈。</li>
+          <li>熟练将 <strong>Cursor</strong> 等 AI 工具与团队规范深度融合，通过定制 <strong>.cursorrules</strong> 和 <strong>AI Skills</strong> 建立架构约束，实现高效能研发落地。</li>
+          <li>深入掌握 <strong>Webpack/Vite</strong> 的底层打包原理与深度编译优化，并具备高并发场景下 <strong>WebSocket 生产级二次封装</strong>与重连降级机制的设计能力。</li>
+          <li>具备扎实的 <strong>TypeScript</strong> 强类型重构及 <strong>Jest/Cypress</strong> 自动化测试落地经验，并拥有流利的<strong>英文技术文档阅读与跨国团队协作</strong>能力。</li>
         </ul>
-      </div>
-    </section>
-
-    <section class="project page2">
-      <h2>项目经历</h2>
-      <div class="project-item">
-        <header>
-          <h4>山竹记账（移动端）</h4>
-          <span>
-            <a href="https://github.com/webpanck/get-chips">源码链接</a>
-            <a href="http://webpanck.github.io/get-chips-preview/">项目预览</a>
-          </span>
-        </header>
-        <p>
-          技术栈：React + TSX + TypeScript + ReactRouter + Zustand + Axios + JWT + Vite + Echarts
-        </p>
-        <ol>
-          <li>本人独立实现的移动端单页面应用，实现了用户登录、记账、标签管理、查看历史、数据统计等功能</li>
-          <li>项目中大量使用 React Hooks，并封装了多个自定义 Hooks，增强了组件的灵活性和复用性</li>
-          <li>使用 TSX 语法编写 React 组件，利用 TSX 结合 TypeScript 的静态类型检查，确保了代码的可靠性</li>
-          <li>利用 JWT 实现了用户登录验证和访问权限控制，确保系统数据的安全性和完整性</li>
-        </ol>
-      </div>
-      <div class="project-item">
-        <header>
-          <h4>洋葱 UI（PC端/移动端）</h4>
-          <span>
-            <a href="https://github.com/webpanck/onion-ui">源码链接</a>
-            <a href="https://webpanck.github.io/onion-ui-website/#/">项目预览</a>
-          </span>
-        </header>
-        <p>
-          技术栈：Vue3 + TypeScript + VueRouter + Vite
-        </p>
-        <ol>
-          <li>个人的 UI 组件库，开发了 Switch、Button、Dialog、Tabs 等常用 UI 组件</li>
-          <li>编写了组件使用文档，可在线预览和查看示例代码</li>
-          <li>同时适配 PC 和移动端，将组件库发布到 npmjs.org，供外部项目引用</li>
-        </ol>
-      </div>
-      <div class="project-item">
-        <header>
-          <h4>鲸落记账（移动端）</h4>
-          <span>
-            <a href="https://github.com/webpanck/Whale-account">源码链接</a>
-            <a href="https://webpanck.github.io/Whale-account-website/">项目预览</a>
-          </span>
-        </header>
-        <p>
-          技术栈：Vue + TypeScript + VueRouter + Vuex
-        </p>
-        <ol>
-          <li>实现了记账、标签管理和数据统计等核心功能，同时实现了应用数据的本地存储功能</li>
-          <li>采用快捷记账的交互设计，通过图表直观展示用户的消费习惯和财务状况，提升用户体验</li>
-        </ol>
-      </div>
-      <div class="project-item">
-        <header>
-          <h4>Donuts UI</h4>
-          <span>
-            <a href="https://github.com/webpanck/Donuts">源码链接</a>
-            <a href="https://webpanck.github.io/Donuts/">项目预览</a>
-          </span>
-        </header>
-        <p>
-          技术栈：Vue + SCSS + Mocha
-        </p>
-        <ol>
-          <li>个人的 UI 组件库，开发了按钮、网格、输入框、布局、弹出层、标签、弹出提示等常用 UI 组件</li>
-          <li>结合组件的实际应用场景进行需求分析与设计，并完成单元测试，通过 TravisCI 实现了组件库的持续集成和自动化构建</li>
-        </ol>
-      </div>
-      <div class="project-item">
-        <header>
-          <h4>大屏可视化</h4>
-          <span>
-            <a href="https://github.com/webpanck/big-screen-react">源码链接</a>
-            <a href="https://webpanck.github.io/big-screen-react-preview/#/">项目预览</a>
-          </span>
-        </header>
-        <p>
-          技术栈：React + ReactRouter + Echarts
-        </p>
-        <ol>
-          <li>实现了柱形图、折线图、饼图、地图和表格等常用数据可视化图表，支持实时数据更新和动画交互效果</li>
-          <li>实现页面元素的自适应缩放，确保页面布局在不同屏幕尺寸下的响应式表现</li>
-        </ol>
       </div>
     </section>
 
@@ -419,8 +347,8 @@
 
 
 
-  <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.1.2/echarts.min.js"></script>
-  <script src="./main.js"></script>
+  <!-- <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.1.2/echarts.min.js"></script>
+  <script src="./main.js"></script> -->
 </body>
 
 </html>
